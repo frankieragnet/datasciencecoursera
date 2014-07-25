@@ -2,10 +2,10 @@
 
 run_analysis<-function()
 {
-  ##library(data.table)
+
   ##Set working directory
-  basePath <- "C:\\Local\\My local Documents\\Training\\Data Analytics\\Getting and Cleaning Data\\Assignment\\UCI HAR Dataset"
-  setwd(basePath)
+  ##basePath <- "C:\\Local\\My local Documents\\Training\\Data Analytics\\Getting and Cleaning Data\\Assignment\\UCI HAR Dataset"
+  ##setwd(basePath)
   
   ##load description files - need stringsAsFactors
   features<-read.table("features.txt",stringsAsFactors=FALSE)
