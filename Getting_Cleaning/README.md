@@ -1,7 +1,7 @@
 # run_analysis.R code
 ## by Francois Ragnet
 
-##Experiment Drescription
+##Experiment Description
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
@@ -26,77 +26,77 @@ See below (Code Book) for the variables and measurements
 
 ## Code Book
 The columns are below:
--Subject: Experiment Subject ID (1 to 30)
--Activity: Textual description of the activity performed
-##Units: values below are raw sensor measurement units, between -1 and +1. 
+* Subject: Experiment Subject ID (1 to 30)
+* Activity: Textual description of the activity performed
+##Units: values below are raw sensor measurement units, between * 1 and +1. 
 ##The name describes the measurement in more details
 ###Mean Value or Standard Deviation are Reported.
 ###X,Y,Z correspond to  3D axes
--Body Acceleration Mean Value X
--Acceleration Mean Value Y	
--Body Acceleration Mean Value Z
--Body Acceleration Standard Deviation X
--Body Acceleration Standard Deviation Y
--Body Acceleration Standard Deviation Z
--Gravity Acceleration Mean Value X
--Gravity Acceleration Mean Value Y
--Gravity Acceleration Mean Value Z
--Gravity Acceleration Standard Deviation X
--Gravity Acceleration Standard Deviation Y
--Gravity Acceleration Standard Deviation Z
--Body Acceleration Jerk Mean Value X
--Body Acceleration Jerk Mean Value Y
--Body Acceleration Jerk Mean Value Z
--Body Acceleration Jerk Standard Deviation X
--Body Acceleration Jerk Standard Deviation Y
--Body Acceleration Jerk Standard Deviation Z
--Body Gyroscopic Mean Value X
--Body Gyroscopic Mean Value Y	
--Body Gyroscopic Mean Value Z
--Body Gyroscopic Standard Deviation X	
--Body Gyroscopic Standard Deviation Y
--Body Gyroscopic Standard Deviation Z
--Body Gyroscopic Jerk Mean Value X
--Body Gyroscopic Jerk Mean Value Y
--Body Gyroscopic Jerk Mean Value Z
--Body Gyroscopic Jerk Standard Deviation X
--Body Gyroscopic Jerk Standard Deviation Y
--Body Gyroscopic Jerk Standard Deviation Z
--Body Acceleration Magnitude Mean Value 
--Body Acceleration Magnitude Standard Deviation 
--Gravity Acceleration Magnitude Mean Value 
--Gravity Acceleration Magnitude Standard Deviation
--Body Acceleration Jerk Magnitude Mean Value
--Body Acceleration Jerk Magnitude Standard Deviation
--Body Gyroscopic Magnitude Mean Value
--Body Gyroscopic Magnitude Standard Deviation 
--Body Gyroscopic Jerk Magnitude Mean Value 	
--Body Gyroscopic Jerk Magnitude Standard Deviation 	
--Frequency Domain Signals,  Body Acceleration Mean Value X	
--Frequency Domain Signals,  Body Acceleration Mean Value Y	
--Frequency Domain Signals,  Body Acceleration Mean Value Z	
--Frequency Domain Signals,  Body Acceleration Standard Deviation X	
--Frequency Domain Signals,  Body Acceleration Standard Deviation Y	
--Frequency Domain Signals,  Body Acceleration Standard Deviation Z	
--Frequency Domain Signals,  Body Acceleration Jerk Mean Value X	
--Frequency Domain Signals,  Body Acceleration Jerk Mean Value Y	
--Frequency Domain Signals,  Body Acceleration Jerk Mean Value Z	
--Frequency Domain Signals,  Body Acceleration Jerk Standard Deviation X	
--Frequency Domain Signals,  Body Acceleration Jerk Standard Deviation Y	
--Frequency Domain Signals,  Body Acceleration Jerk Standard Deviation Z	
--Frequency Domain Signals,  Body Gyroscopic Mean Value X	
--Frequency Domain Signals,  Body Gyroscopic Mean Value Y	
--Frequency Domain Signals,  Body Gyroscopic Mean Value Z	
--Frequency Domain Signals,  Body Gyroscopic Standard Deviation X	
--Frequency Domain Signals,  Body Gyroscopic Standard Deviation Y	
--Frequency Domain Signals,  Body Gyroscopic Standard Deviation Z	
--Frequency Domain Signals,  Body Acceleration Magnitude Mean Value 	
--Frequency Domain Signals,  Body Acceleration Magnitude Standard Deviation 	
--Frequency Domain Signals,   Body Acceleration Jerk Magnitude Mean Value 	
--Frequency Domain Signals,   Body Acceleration Jerk Magnitude Standard Deviation 	
--Frequency Domain Signals,   Body Gyroscopic Magnitude Mean Value 	
--Frequency Domain Signals,   Body Gyroscopic Magnitude Standard Deviation 	
--Frequency Domain Signals,   Body Gyroscopic Jerk Magnitude Mean Value 	
--Frequency Domain Signals,   Body Gyroscopic Jerk Magnitude Standard Deviation 
+* Body Acceleration Mean Value X
+* Acceleration Mean Value Y	
+* Body Acceleration Mean Value Z
+* Body Acceleration Standard Deviation X
+* Body Acceleration Standard Deviation Y
+* Body Acceleration Standard Deviation Z
+* Gravity Acceleration Mean Value X
+* Gravity Acceleration Mean Value Y
+* Gravity Acceleration Mean Value Z
+* Gravity Acceleration Standard Deviation X
+* Gravity Acceleration Standard Deviation Y
+* Gravity Acceleration Standard Deviation Z
+* Body Acceleration Jerk Mean Value X
+* Body Acceleration Jerk Mean Value Y
+* Body Acceleration Jerk Mean Value Z
+* Body Acceleration Jerk Standard Deviation X
+* Body Acceleration Jerk Standard Deviation Y
+* Body Acceleration Jerk Standard Deviation Z
+* Body Gyroscopic Mean Value X
+* Body Gyroscopic Mean Value Y	
+* Body Gyroscopic Mean Value Z
+* Body Gyroscopic Standard Deviation X	
+* Body Gyroscopic Standard Deviation Y
+* Body Gyroscopic Standard Deviation Z
+* Body Gyroscopic Jerk Mean Value X
+* Body Gyroscopic Jerk Mean Value Y
+* Body Gyroscopic Jerk Mean Value Z
+* Body Gyroscopic Jerk Standard Deviation X
+* Body Gyroscopic Jerk Standard Deviation Y
+* Body Gyroscopic Jerk Standard Deviation Z
+* Body Acceleration Magnitude Mean Value 
+* Body Acceleration Magnitude Standard Deviation 
+* Gravity Acceleration Magnitude Mean Value 
+* Gravity Acceleration Magnitude Standard Deviation
+* Body Acceleration Jerk Magnitude Mean Value
+* Body Acceleration Jerk Magnitude Standard Deviation
+* Body Gyroscopic Magnitude Mean Value
+* Body Gyroscopic Magnitude Standard Deviation 
+* Body Gyroscopic Jerk Magnitude Mean Value 	
+* Body Gyroscopic Jerk Magnitude Standard Deviation 	
+* Frequency Domain Signals,  Body Acceleration Mean Value X	
+* Frequency Domain Signals,  Body Acceleration Mean Value Y	
+* Frequency Domain Signals,  Body Acceleration Mean Value Z	
+* Frequency Domain Signals,  Body Acceleration Standard Deviation X	
+* Frequency Domain Signals,  Body Acceleration Standard Deviation Y	
+* Frequency Domain Signals,  Body Acceleration Standard Deviation Z	
+* Frequency Domain Signals,  Body Acceleration Jerk Mean Value X	
+* Frequency Domain Signals,  Body Acceleration Jerk Mean Value Y	
+* Frequency Domain Signals,  Body Acceleration Jerk Mean Value Z	
+* Frequency Domain Signals,  Body Acceleration Jerk Standard Deviation X	
+* Frequency Domain Signals,  Body Acceleration Jerk Standard Deviation Y	
+* Frequency Domain Signals,  Body Acceleration Jerk Standard Deviation Z	
+* Frequency Domain Signals,  Body Gyroscopic Mean Value X	
+* Frequency Domain Signals,  Body Gyroscopic Mean Value Y	
+* Frequency Domain Signals,  Body Gyroscopic Mean Value Z	
+* Frequency Domain Signals,  Body Gyroscopic Standard Deviation X	
+* Frequency Domain Signals,  Body Gyroscopic Standard Deviation Y	
+* Frequency Domain Signals,  Body Gyroscopic Standard Deviation Z	
+* Frequency Domain Signals,  Body Acceleration Magnitude Mean Value 	
+* Frequency Domain Signals,  Body Acceleration Magnitude Standard Deviation 	
+* Frequency Domain Signals,   Body Acceleration Jerk Magnitude Mean Value 	
+* Frequency Domain Signals,   Body Acceleration Jerk Magnitude Standard Deviation 	
+* Frequency Domain Signals,   Body Gyroscopic Magnitude Mean Value 	
+* Frequency Domain Signals,   Body Gyroscopic Magnitude Standard Deviation 	
+* Frequency Domain Signals,   Body Gyroscopic Jerk Magnitude Mean Value 	
+* Frequency Domain Signals,   Body Gyroscopic Jerk Magnitude Standard Deviation 
 
 ### 
